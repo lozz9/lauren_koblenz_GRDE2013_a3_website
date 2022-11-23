@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- This is needed for responsive design to work-->
+  <link rel="stylesheet" href="css/styles.css"><!--This links the html file with css-->
+  <link rel="stylesheet" href="css/glider.min.css"><!--This links the html file with glider content-->
+  <title>Vape Free</title>
+
+  <meta name="author" content="Anti-vaping website by Lauren Koblenz">
+  <meta name="description" content="Vape Free is a anti-vaping website designed for young Australians who vape.">
+  <meta name="keywords" content="vape, young Australians, anti-vape, how to quit vaping, addiction."><!--This helps people when searching in google-->
+
+  <!-- ////////// THESE ALLOW ACCESS TO SHOELACE ////////// -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.84/dist/themes/light.css" /><!--This allows access to the content from Shoelace-->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.84/dist/shoelace.js"></script><!--This allows access to the content from Shoelace-->
+
+</head>
+
+<!-- ////////// CONTENT ON PAGE ////////// -->
+<body>
+  <!-- ////////// ALL NAVIGATION (LOGO, HAMBURGER BUTTON, MUSIC BUTTON, NAVIGATION ITEMS) ////////// -->
+  <div id="navigation-all">
+      <!-- ////////// LOGO IN NAVIGATION ////////// -->
+      <div id="logo-container">
+        <img src="images/vapelogo.png" id="logo" alt="Vape Free - anti-vaping website brandmark.">
+        <!--(Figure 1. "[Vape Free Brandmark]." October 20 2022, Digital illustration. Produced by Lauren Koblenz)-->
+      </div>
+      <!-- ////////// HAMBURGER BUTTON ////////// -->
+      <div id="hamburger-btn">
+        <sl-icon-button name="list" alt="Hamburger icon/button."></sl-icon-button><!--(Figure 2. "list." n.d, icon-button. Accessed on October 26 2022. Produced from Shoelace)-->
+      </div>
+      <!-- ////////// MENUS IN NAVIGATION ////////// -->
+      <div id="navigation-items">
+        <nav><!--The nav tag is a semantic tag.-->
+          <ul><!--the ul tag is used for making lists. The href tags below are links. This is the navigation bar.-->
+            <li><a href="#">Home</a></li>
+            <li><a href="#statistics-content">Statistics</a></li>
+            <li><a href="#smoking-vaping-content">Smoking vs Vaping</a></li>
+            <li><a href="#quiting-content">How to quit</a></li>
+            <li><a href="#talking-to-others-content">Talking to others</a></li>
+            <li><a href="#donate-content">Donate</a></li>
+          </ul>
+        </nav>
+        <!-- ////////// MUSIC BUTTON ////////// -->
+        <div id="music-btn">
+          <sl-tooltip content="Play / Pause Music" placement="bottom-end">
+            <sl-icon-button name="music-note-beamed" alt="Music note icon/button."></sl-icon-button><!--(Figure 3. "music-note-beamed." n.d, icon-button. Accessed on October 23 2022. Produced from Shoelace)-->
+          </sl-tooltip><!--(Figure 4. "tooltip." n.d, tooltip. Accessed on October 23 2022. Produced from Shoelace)-->
+        </div>
+      </div>
+  </div>
+
+  <!-- ////////// HOME CONTENT ////////// -->
+  <div id="home-content">
+    <!-- ////////// SMOKE BACKGROUND VIDEO ////////// -->
+    <video id="smoke-vid" src="videos/smoke-video.mp4"></video>
+    <!-- ////////// HEADINGS, GET STARTED BUTTON, DOWN ARROW ////////// -->
+    <div id="home-headings-arrow">
+      <div id="main-headings">
+        <h1>Vapes: Think about what you inhale.</h1>
+        <h2>Made by youngsters, for youngsters</h2>
+      </div>
+      <!-- ////////// GET STARTED BUTTON ////////// -->
+      <button id="get-started-btn">Let's get started</button>
+      <!-- ////////// DOWN ARROW ////////// -->
+      <div id="down-arrow">
+        <a href="#statistics-content">
+            <sl-icon-button name="arrow-down" alt="Down arrow icon/button."></sl-icon-button><!--(Figure 5. "arrow-down." n.d, icon-button. Accessed on October 23 2022. Produced from Shoelace)-->
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+  <!-- ////////// STATISTICS ////////// -->
+  <div id="statistics-content">
+    <h1>Statistics: know the facts.</h1>
+    <div id="stats-imgs">
+      <div id="flip-card1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/vape-orange.png" class="orange-vape" alt="Orange tall vape"><!--(Figure 6. "[Orange vape vector illustration]." October 23 2022, Digital illustration. Produced by Lauren Koblenz)-->
+          </div>
+          <div class="flip-card-back">
+            <img src="images/vape-white1.jpg" class="white-vape1"
+              alt="White vape silhouette with a black icon and text on top. The icon is a picture of infected lungs. The text reads: Formaldehyde and acrolein, are chemicals commonly found in vapes and e-cigarettes. These chemicals are known to cause irreversible lung damage."><!--(Figure 7. "[Damaged lungs flat icon vector image]." 2022, Digital illustration. Produced from Vectorstock)-->
+          </div>
+        </div>
+      </div>
+
+      <div id="flip-card2">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/vape-green.png" class="green-vape" alt="Green tall vape"><!--(Figure 8. "[Green vape vector illustration]." October 25 2022, Digital illustration. Produced by Lauren Koblenz)-->
+          </div>
+          <div class="flip-card-back">
+            <img src="images/vape-white2.jpg" class="white-vape2"
+              alt="White vape silhouette with a black icon and text on top. The icon is a picture of a hammer hitting a brain. The text reads: Nicotine is a highly addictive drug that can damage the adolescent brain, particularly in areas that control attention, learning, mood and behavioural control."><!--(Figure 9. "Brain damage, crash, impact icon." 2022, Digital illustration. Produced from Iconfinder)-->
+          </div>
+        </div>
+      </div>
+
+      <div id="flip-card3">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/vape-orange.png" class="orange-vape" alt="Orange tall vape"><!--(Figure 10. "[Orange vape vector illustration]." October 23 2022, Digital illustration. Produced by Lauren Koblenz)-->
+          </div>
+          <div class="flip-card-back">
+            <img src="images/vape-white3.jpg" class="white-vape3"
+              alt="White vape silhouette with a black icon and text on top. The icon is a toxic symbol. The text reads: Propylene glycol is also found in vapes, which is toxic to human cells. It is found in paint."><!--(Figure 11. "[SVG > pollution bacteria caution poison]." 2022, Digital illustration. Produced from SVG Silh)-->
+          </div>
+        </div>
+      </div>
+
+      <div id="flip-card4">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/vape-green.png" class="green-vape" alt="Green tall vape"><!--(Figure 12. "[Green vape vector illustration]." October 25 2022, Digital illustration. Produced by Lauren Koblenz)-->
+          </div>
+          <div class="flip-card-back">
+            <img src="images/vape-white4.jpg" class="white-vape4"
+              alt="White vape silhouette with a black icon and text on top. The icon is a picture of someone speaking lies. The text reads: Vaping products aren't regulated, so it is difficult to know exactly what they contain. A study on more than 50 vape juices in Australia found that none of them had accurate ingredient labels."><!--(Figure 13. "Lie." n.d. 2022, Digital illustration. Produced from The Noun Project)-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ////////// SMOKING VS VAPING ////////// -->
+  <div id="smoking-vaping-content">
+    <div id="smoking-vaping-vid-container">
+      <!-- ////////// SMOKING VS VAPING VIDEO ////////// -->
+      <video width="320" height="240" controls src="videos/smoking-versus-vaping.mp4" id="smoking-vaping-vid"></video><!--(Colburn 2019)-->
+    </div>
+    <!-- ////////// SMOKING VS VAPING TEXT ////////// -->
+    <div id="smoking-vaping-text">
+      <h1>Smoking vs Vaping.</h1>
+      <p>Many people think vaping is safer than smoking, but is it really?<br><br>In this video Michael Colburn
+        discusses the differences between <br>smoking and vaping, and if it is safer.
+      </p>
+    </div>
+  </div>
+
+  <!-- ////////// HOW TO QUIT (text and image carousel) ////////// -->
+  <div id="quiting-content">
+    <!-- ////////// HOW TO QUIT TEXT ////////// -->
+    <div id="quiting-text">
+      <h1>How to quit <br>vaping for good.</h1>
+      <p>To stop vaping addiction, you need to find your reason. <br>Ask yourself what are the benefits to stopping your addiction. <br>We have provided some reasons to help get you started.<br><br>Everytime you feel like vaping, remind yourself <br>of your reasons.
+      </p>
+    </div>
+
+    <!-- ////////// IMAGE CAROUSEL ////////// -->
+    <div class="glider-contain-multiple">
+      <!-- ////////// PREVIOUS ARROW FOR CAROUSEL ////////// -->
+      <button class="glider-prev">
+        <sl-icon name="arrow-left" alt="Left arrow icon/button."></sl-icon><!--(Figure 14. "arrow-left." n.d, icon-button. Accessed on October 26 2022. Produced from Shoelace)-->
+      </button>
+      <div class="glider">
+        <img src="images/image-gallery1.png" alt= "Image of person sitting on the floor with a dark scribble above his head. The description above this image reads: It influences my mood and everyday behaviour."><!--(Figure 15. "Loneliness kills." n.d. Produced from Queensland Mental Health Commission)-->
+        <img src="images/image-gallery2.png" alt= "Image of a person stressing over a Grade F on their test. The description above this image reads: It interferes with my schoolwork or grades."><!--(Figure 16. "[vaping affects grades]." October 26 2022, Digital illustration. Produced by Lauren Koblenz)-->
+        <img src="images/image-gallery3.png" alt= "Image of piggy bank and money. The description above this image reads: Vape equipment and juices are expensive."><!--(Figure 17. "[vaping is expensive]." October 26 2022, Digital illustration. Produced by Lauren Koblenz)-->
+        <img src="images/image-gallery4.png" alt= "Image of two people next to eachother, with a sad face above their heads. The description above this image reads: It affects my relationships with other people."><!--(Figure 18. "[vaping affects relationships]." October 26 2022, Digital illustration. Produced by Lauren Koblenz)-->
+      </div>
+      <!-- ////////// NEXT ARROW FOR CAROUSEL ////////// -->
+      <button class="glider-next">
+        <sl-icon name="arrow-right" alt="Right arrow icon/button."></sl-icon><!--(Figure 19. "arrow-right." n.d, icon-button. Accessed on October 26 2022. Produced from Shoelace)-->
+      </button>
+      <!-- ////////// CLOUD IMAGE FOR CAROUSEL ////////// -->
+      <img src="images/cloud.png" id="cloud" alt="A horizontal cloud positioned at the bottom of the image carousel."><!--(Figure 20. "[Clouds Smoke Fog Alienized]." Accessed October 8 2022, Digital illustration. Produced from Picsart)-->
+    </div>
+  </div>
+
+  <!-- ////////// TALKING TO OTHERS ////////// -->
+  <div id="talking-to-others-content">
+    <!-- ////////// INTRO TEXT FOR TALKING TO OTHERS ////////// -->
+    <div id="talking-intro-text">
+      <h1>Taking to others about vaping.</h1>
+      <p>Are you worried about a young person who may be vaping? A conversation with them <br>about it might feel hard,
+        but it's always a good idea! Here are a few helpful tips.
+      </p>
+    </div>
+
+    <!-- ////////// SPEECH BUBBLE 1 ////////// -->
+    <div class="speech-bubble-left-container" id="lsb1">
+      <!-- This is the orange speech bubble-->
+      <svg id="orange-bubble" alt= "White left speech bubble with a orange border." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="3945.872" height="1716.707" viewBox="0 0 3945.872 1716.707">
+        <defs>
+          <clipPath id="clip-path">
+            <path id="Path_48" data-name="Path 48" d="M0,1655.431H3945.872V-61.276H0Z" transform="translate(0 61.276)"
+              fill="#fff" stroke="#e37826" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+          </clipPath>
+        </defs>
+        <g id="Group_53" data-name="Group 53" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <g id="Group_52" data-name="Group 52" transform="translate(21.949 7.323)">
+            <g id="Path_47" data-name="Path 47" transform="translate(11.414)" fill="#fff" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M 3.6356041431427 1696.138916015625 L 305.8014831542969 1460.803588867188 L 307.719970703125 1459.30908203125 L 307.7289733886719 1456.876586914062 L 313.0282897949219 5.000047206878662 L 3900.239013671875 5.000047206878662 L 3900.239013671875 1688.425537109375 L 308.0464782714844 1688.425537109375 L 307.9829711914062 1688.425537109375 L 307.9199829101562 1688.427001953125 L 3.6356041431427 1696.138916015625 Z"
+                stroke="none" />
+              <path
+                d="M 318.010009765625 10 L 312.728515625 1456.89501953125 C 312.717041015625 1459.966064453125 311.2958984375 1462.861083984375 308.873046875 1464.748046875 L 18.68359375 1690.756103515625 L 308.04638671875 1683.425537109375 L 3895.239013671875 1683.425537109375 L 3895.239013671875 10 L 318.010009765625 10 M 308.04638671875 0 L 3905.239013671875 0 L 3905.239013671875 1693.425537109375 L 308.04638671875 1693.425537109375 L -11.4140625 1701.522094726562 L 302.728515625 1456.858520507812 L 308.04638671875 0 Z"
+                stroke="none" fill="#e37826" />
+            </g>
+          </g>
+        </g>
+      </svg><!--(Figure 21. "[Left speech bubble - orange]." October 13 2022, Digital illustration. Produced by Lauren Koblenz)-->
+      <!-- ////////// SPEECH BUBBLE 1 (SVG ICON AND TEXT) ////////// -->
+      <div class="speech-bubble-left-contents">
+        <div class="svg-image">
+          <svg width="12.5vw" alt= "Three pieces of paper and a magnifying glass." viewBox="0 0 950 738" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="start-info">
+              <g id="notes">
+                <path id="Rectangle 2"
+                  d="M68 161C68 140.013 85.0132 123 106 123H193H240.471C251.251 123 261.525 127.579 268.731 135.597L288.42 157.5L310.553 187.43C315.39 193.97 318 201.89 318 210.024V295.5V430C318 450.987 300.987 468 280 468H106C85.0132 468 68 450.987 68 430V161Z"
+                  fill="white" />
+                <path id="Rectangle 3"
+                  d="M347 161C347 140.013 364.013 123 385 123H472H519.471C530.251 123 540.525 127.579 547.731 135.597L567.42 157.5L589.553 187.43C594.39 193.97 597 201.89 597 210.024V295.5V430C597 450.987 579.987 468 559 468H385C364.013 468 347 450.987 347 430V161Z"
+                  fill="white" />
+                <path id="Rectangle 4"
+                  d="M633 161C633 140.013 650.013 123 671 123H758H805.471C816.251 123 826.525 127.579 833.731 135.597L853.42 157.5L875.553 187.43C880.39 193.97 883 201.89 883 210.024V295.5V430C883 450.987 865.987 468 845 468H671C650.013 468 633 450.987 633 430V161Z"
+                  fill="white" />
+                <path id="Rectangle 1"
+                  d="M595 246.5V210.024C595 201.89 592.39 193.97 587.553 187.43L565.42 157.5L545.731 135.597C538.525 127.579 528.251 123 517.471 123H470H383C362.013 123 345 140.013 345 161V430C345 450.987 362.013 468 383 468H439"
+                  stroke="black" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+                <path id="Vector 1"
+                  d="M518.664 187V129.5L566 152.5L590.229 206H537.664C527.171 206 518.664 197.493 518.664 187Z"
+                  fill="black" />
+                <path id="Rectangle 1_2"
+                  d="M806.5 468H845C865.987 468 883 450.987 883 430V295.5V210.024C883 201.89 880.39 193.97 875.553 187.43L853.42 157.5L833.731 135.597C826.525 127.579 816.251 123 805.471 123H758H671C650.013 123 633 140.013 633 161V246.5"
+                  stroke="#73A684" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+                <path id="Vector 1_2"
+                  d="M806.664 187V129.5L853.5 155.5L878.229 206H825.664C815.171 206 806.664 197.493 806.664 187Z"
+                  fill="#73A684" />
+                <path id="Rectangle 1_3"
+                  d="M279 458H105C89.536 458 77 445.464 77 430V161C77 145.536 89.536 133 105 133H192H239.471C247.414 133 254.984 136.374 260.294 142.282L279.663 163.83L301.513 193.376C305.077 198.195 307 204.031 307 210.024V295.5V430C307 445.464 294.464 458 279 458Z"
+                  stroke="#73A684" stroke-width="20" stroke-linejoin="round" />
+                <path id="Vector 1_3"
+                  d="M240.664 187V129.5L312.229 206H259.664C249.171 206 240.664 197.493 240.664 187Z" fill="#73A684" />
+                <line id="Line 10" x1="119" y1="207" x2="189" y2="207" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 11" x1="119" y1="251" x2="264" y2="251" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 12" x1="119" y1="291" x2="264" y2="291" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 13" x1="119" y1="336" x2="264" y2="336" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 14" x1="119" y1="375" x2="264" y2="375" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 15" x1="119" y1="419" x2="264" y2="419" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 10_2" x1="687" y1="207" x2="757" y2="207" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 11_2" x1="687" y1="251" x2="839" y2="251" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 12_2" x1="742" y1="291" x2="839" y2="291" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <path id="Line 13_2" d="M770 336H842" stroke="black" stroke-width="20" stroke-linecap="round" />
+                <line id="Line 14_2" x1="797" y1="375" x2="839" y2="375" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 15_2" x1="804" y1="419" x2="839" y2="419" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 10_3" x1="390" y1="207" x2="460" y2="207" stroke="#73A684" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 11_3" x1="390" y1="251" x2="535" y2="251" stroke="#73A684" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 12_3" x1="390" y1="291" x2="491" y2="291" stroke="#73A684" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 13_3" x1="390" y1="336" x2="469" y2="336" stroke="#73A684" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 14_3" x1="390" y1="375" x2="453" y2="375" stroke="#73A684" stroke-width="20"
+                  stroke-linecap="round" />
+                <line id="Line 15_3" x1="390" y1="419" x2="436" y2="419" stroke="#73A684" stroke-width="20"
+                  stroke-linecap="round" />
+              </g>
+              <g id="info-glass">
+                <circle id="Ellipse 6" cx="625.5" cy="448.5" r="126.5" fill="white" stroke="#E37826"
+                  stroke-width="54" />
+                <path id="Rectangle 2_2"
+                  d="M694.187 560.921L738.927 515.473L884.575 658.853C892.053 666.215 892.147 678.244 884.786 685.722L866.704 704.09C859.343 711.568 847.313 711.662 839.835 704.301L694.187 560.921Z"
+                  fill="#E37826" />
+                <line id="Line 9" x1="628" y1="423" x2="628" y2="510" stroke="#E37826" stroke-width="26"
+                  stroke-linecap="round" />
+                <circle id="Ellipse 7" cx="628.5" cy="379.5" r="13.5" fill="#E37826" />
+              </g>
+            </g>
+          </svg><!--(Figure 22. "Free PNG & SVG 291344 - Noun Project." 2015. Digital illustration. Produced from The noun project)-->
+        </div>
+        <div class="speech-bubble-text-left">
+          <h2>Start with Information</h2>
+          <p>Get key facts and statistics to support <br>your say. Think about in advance what <br>you are going to say.
+            Thinks about <br>questions you want to ask them.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ////////// SPEECH BUBBLE 2 ////////// -->
+    <div class="speech-bubble-right-container" id="rsb1">
+      <svg id="green-bubble" alt= "White right speech bubble with a green border." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="3943.752" height="1720.252" viewBox="0 0 3943.752 1720.252">
+        <defs>
+          <clipPath id="clip-path">
+            <path id="Path_48" data-name="Path 48" d="M3943.752,1658.976H0V-61.276H3943.752Z"
+              transform="translate(0 61.276)" fill="#fff" stroke="#73a684" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="10" />
+          </clipPath>
+        </defs>
+        <g id="Group_53" data-name="Group 53" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <g id="Group_52" data-name="Group 52" transform="translate(7.267 7.339)">
+            <g id="Path_47" data-name="Path 47" transform="translate(11.414)" fill="#fff" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M 3888.115234375 1699.652465820312 L 3583.972412109375 1691.923828125 L 3583.908935546875 1691.92236328125 L 3583.845458984375 1691.92236328125 L -6.41413688659668 1691.92236328125 L -6.41413688659668 4.99988317489624 L 3578.863525390625 4.99988317489624 L 3584.159912109375 1459.884887695312 L 3584.1689453125 1462.313354492188 L 3586.082275390625 1463.807861328125 L 3888.115234375 1699.652465820312 Z"
+                stroke="none" />
+              <path
+                d="M -1.4140625 9.9998779296875 L -1.4140625 1686.92236328125 L 3584.099365234375 1686.925415039062 L 3873.09765625 1694.269165039062 L 3583.00537109375 1467.748413085938 C 3580.58837890625 1465.861328125 3579.1708984375 1462.969848632812 3579.159912109375 1459.9033203125 L 3573.881591796875 9.9998779296875 L -1.4140625 9.9998779296875 M -11.4140625 -0.0001220703125 L 3583.845458984375 -0.0001220703125 L 3589.159912109375 1459.866943359375 L 3903.1337890625 1705.035888671875 L 3583.845458984375 1696.92236328125 L -11.4140625 1696.92236328125 L -11.4140625 -0.0001220703125 Z"
+                stroke="none" fill="#73a684" />
+            </g>
+          </g>
+        </g>
+      </svg><!--(Figure 23. "[Right speech bubble - green]." October 13 2022, Digital illustration. Produced by Lauren Koblenz)-->
+      <!-- ////////// SPEECH BUBBLE 2 (SVG ICON AND TEXT) ////////// -->
+      <div class="speech-bubble-right-contents">
+        <div class="svg-image">
+          <svg width="12.5vw" alt= "A smiley face with an orange sun above its head." viewBox="0 0 723 738" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="approach-calmly">
+              <g id="sun">
+                <circle id="Ellipse 1" cx="571.5" cy="127.5" r="35.5" fill="#E37826" />
+                <line id="Line 1" x1="503.121" y1="52" x2="539" y2="87.8787" stroke="#E37826" stroke-width="3"
+                  stroke-linecap="round" />
+                <line id="Line 2" x1="615.121" y1="163" x2="651" y2="198.879" stroke="#E37826" stroke-width="3"
+                  stroke-linecap="round" />
+                <line id="Line 5" x1="1.5" y1="-1.5" x2="53.1431" y2="-1.5"
+                  transform="matrix(-0.718602 0.695421 0.718602 0.695421 648.267 54)" stroke="#E37826" stroke-width="3"
+                  stroke-linecap="round" />
+                <line id="Line 6" x1="1.5" y1="-1.5" x2="53.1431" y2="-1.5"
+                  transform="matrix(-0.718602 0.695421 0.718602 0.695421 532.267 164)" stroke="#E37826" stroke-width="3"
+                  stroke-linecap="round" />
+                <line id="Line 3" x1="572.5" y1="32.4997" x2="572.51" y2="83.2398" stroke="#E37826" stroke-width="3"
+                  stroke-linecap="round" />
+                <line id="Line 4" x1="572.5" y1="171.5" x2="572.5" y2="222.24" stroke="#E37826" stroke-width="3"
+                  stroke-linecap="round" />
+                <line id="Line 7" x1="470.5" y1="125.5" x2="518.5" y2="125.5" stroke="#E37826" stroke-width="3"
+                  stroke-linecap="round" />
+                <line id="Line 8" x1="623.5" y1="125.5" x2="671.5" y2="125.5" stroke="#E37826" stroke-width="3"
+                  stroke-linecap="round" />
+              </g>
+              <g id="smiley-face">
+                <circle id="Ellipse 2" cx="304.5" cy="454.5" r="243.5" fill="white" stroke="#73A684"
+                  stroke-width="20" />
+                <path id="Ellipse 3" d="M246 406C246 428.091 229.093 446 208.237 446C187.381 446 172 428.091 172 406"
+                  stroke="black" stroke-width="20" stroke-linecap="round" />
+                <path id="Ellipse 4" d="M438 406C438 428.091 421.093 446 400.237 446C379.381 446 364 428.091 364 406"
+                  stroke="black" stroke-width="20" stroke-linecap="round" />
+                <path id="Ellipse 5" d="M436 526C413.5 568.5 365.05 604 302.201 604C239.352 604 192.5 571.5 173 526"
+                  stroke="black" stroke-width="20" stroke-linecap="round" />
+              </g>
+            </g>
+          </svg><!--(Figure 24. "Free PNG & SVG 1181481 - Noun Project." 2017. Digital illustration. Produced from The Noun Project)-->
+        </div>
+        <div class="speech-bubble-text-right">
+          <h2>Approach them calmly.</h2>
+          <p>Make sure you are not talking to <br>them in an accusing way. You may <br>want to start the conversation
+            after <br>doing a fun activity together or <br>when you both are in a good mood. <br>Keep things casual and
+            relaxed.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ////////// SPEECH BUBBLE 3 ////////// -->
+    <div class="speech-bubble-left-container" id="lsb2">
+      <svg id="orange-bubble2" alt= "White left speechbubble with a orange border." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="3945.872" height="1716.707" viewBox="0 0 3945.872 1716.707">
+        <defs>
+          <clipPath id="clip-path">
+            <path id="Path_48" data-name="Path 48" d="M0,1655.431H3945.872V-61.276H0Z" transform="translate(0 61.276)"
+              fill="#fff" stroke="#e37826" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+          </clipPath>
+        </defs>
+        <g id="Group_53" data-name="Group 53" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <g id="Group_52" data-name="Group 52" transform="translate(21.949 7.323)">
+            <g id="Path_47" data-name="Path 47" transform="translate(11.414)" fill="#fff" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M 3.6356041431427 1696.138916015625 L 305.8014831542969 1460.803588867188 L 307.719970703125 1459.30908203125 L 307.7289733886719 1456.876586914062 L 313.0282897949219 5.000047206878662 L 3900.239013671875 5.000047206878662 L 3900.239013671875 1688.425537109375 L 308.0464782714844 1688.425537109375 L 307.9829711914062 1688.425537109375 L 307.9199829101562 1688.427001953125 L 3.6356041431427 1696.138916015625 Z"
+                stroke="none" />
+              <path
+                d="M 318.010009765625 10 L 312.728515625 1456.89501953125 C 312.717041015625 1459.966064453125 311.2958984375 1462.861083984375 308.873046875 1464.748046875 L 18.68359375 1690.756103515625 L 308.04638671875 1683.425537109375 L 3895.239013671875 1683.425537109375 L 3895.239013671875 10 L 318.010009765625 10 M 308.04638671875 0 L 3905.239013671875 0 L 3905.239013671875 1693.425537109375 L 308.04638671875 1693.425537109375 L -11.4140625 1701.522094726562 L 302.728515625 1456.858520507812 L 308.04638671875 0 Z"
+                stroke="none" fill="#e37826" />
+            </g>
+          </g>
+        </g>
+      </svg><!--(Figure 25. "[Left speech bubble - orange]." October 13 2022, Digital illustration. Produced by Lauren Koblenz)-->
+      <!-- ////////// SPEECH BUBBLE 3 (SVG ICON AND TEXT) ////////// -->
+      <div class="speech-bubble-left-contents">
+        <div class="svg-image">
+          <svg width="12.5vw" alt= "An ear with sound waves coming out of it." viewBox="0 0 723 738" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="listen">
+              <rect id="Rectangle 5" x="61" y="355" width="210" height="231" fill="white" />
+              <g id="ear">
+                <path id="Vector 3"
+                  d="M483.408 114.927C622.293 101.723 670.894 232.874 675.312 301.644C708 359 695.5 461 629.785 539.65V587.788C629.785 607.67 613.667 623.788 593.785 623.788H482.526C462.644 623.788 446.526 607.67 446.526 587.788V530.43L335.303 375.408C278.826 273.406 330.116 129.5 483.408 114.927Z"
+                  fill="white" />
+                <path id="Vector 2"
+                  d="M675 301.644C670.582 232.874 621.982 101.723 483.097 114.927C329.804 129.5 278.515 273.406 334.991 375.408L446.214 530.43V587.788C446.214 607.67 462.332 623.788 482.214 623.788H593.473C613.356 623.788 629.473 607.67 629.473 587.788V539.65"
+                  stroke="#E37826" stroke-width="20" stroke-linecap="round" />
+                <g id="Group 1">
+                  <path id="Vector 3_2"
+                    d="M657.711 468.767L573.888 430.995C567.788 428.246 563.044 423.165 560.718 416.891L544.192 372.309C541.478 364.988 544.1 356.759 550.55 352.358L588.557 326.424"
+                    stroke="#73A684" stroke-width="20" stroke-linecap="round" />
+                  <path id="Vector 4"
+                    d="M609.88 379.442C602.772 359.849 588.903 312.593 590.286 280.321C582.026 242.862 543.722 175.322 456.587 204.827C369.453 234.333 394.54 319.316 417.976 358.12L495.199 460.122"
+                    stroke="#73A684" stroke-width="20" stroke-linecap="round" />
+                </g>
+              </g>
+              <g id="sound-waves">
+                <path id="Ellipse 8"
+                  d="M260 474.842C243.322 480.433 225.727 467.738 220.702 446.486C215.676 425.235 225.122 403.475 241.8 397.884"
+                  stroke="black" stroke-width="20" stroke-linecap="round" />
+                <path id="Ellipse 9"
+                  d="M214.247 525.282C189.659 533.525 162.402 509.231 153.365 471.02C144.329 432.81 156.935 395.152 181.523 386.909"
+                  stroke="black" stroke-width="20" stroke-linecap="round" />
+                <path id="Ellipse 10"
+                  d="M175.943 572.752C131.766 587.562 85.2183 554.177 71.9765 498.184C58.7346 442.191 83.8127 384.794 127.99 369.985"
+                  stroke="black" stroke-width="20" stroke-linecap="round" />
+              </g>
+            </g>
+          </svg><!--(Figure 26. "Ear free icon." 2022, Digital illustration. Produced from Flaticon)-->
+        </div>
+        <div class="speech-bubble-text-left">
+          <h2>Listen to them & avoid judging or lecturing.</h2>
+          <p>Give them the opportunity to explain <br>their actions. Talking over them will <br>make them trust you less.
+            Try asking questions like: "what made <br>you want to try?"
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ////////// SPEECH BUBBLE 4 ////////// -->
+    <div class="speech-bubble-right-container" id="rsb2">
+      <svg id="green-bubble2" alt= "White right speech bubble with a green border." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="3943.752" height="1720.252" viewBox="0 0 3943.752 1720.252">
+        <defs>
+          <clipPath id="clip-path">
+            <path id="Path_48" data-name="Path 48" d="M3943.752,1658.976H0V-61.276H3943.752Z"
+              transform="translate(0 61.276)" fill="#fff" stroke="#73a684" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="10" />
+          </clipPath>
+        </defs>
+        <g id="Group_53" data-name="Group 53" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <g id="Group_52" data-name="Group 52" transform="translate(7.267 7.339)">
+            <g id="Path_47" data-name="Path 47" transform="translate(11.414)" fill="#fff" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M 3888.115234375 1699.652465820312 L 3583.972412109375 1691.923828125 L 3583.908935546875 1691.92236328125 L 3583.845458984375 1691.92236328125 L -6.41413688659668 1691.92236328125 L -6.41413688659668 4.99988317489624 L 3578.863525390625 4.99988317489624 L 3584.159912109375 1459.884887695312 L 3584.1689453125 1462.313354492188 L 3586.082275390625 1463.807861328125 L 3888.115234375 1699.652465820312 Z"
+                stroke="none" />
+              <path
+                d="M -1.4140625 9.9998779296875 L -1.4140625 1686.92236328125 L 3584.099365234375 1686.925415039062 L 3873.09765625 1694.269165039062 L 3583.00537109375 1467.748413085938 C 3580.58837890625 1465.861328125 3579.1708984375 1462.969848632812 3579.159912109375 1459.9033203125 L 3573.881591796875 9.9998779296875 L -1.4140625 9.9998779296875 M -11.4140625 -0.0001220703125 L 3583.845458984375 -0.0001220703125 L 3589.159912109375 1459.866943359375 L 3903.1337890625 1705.035888671875 L 3583.845458984375 1696.92236328125 L -11.4140625 1696.92236328125 L -11.4140625 -0.0001220703125 Z"
+                stroke="none" fill="#73a684" />
+            </g>
+          </g>
+        </g>
+      </svg><!--(Figure 27. "[Right speech bubble - green]." Accessed October 13 2022, Digital illustration. Produced by Lauren Koblenz)-->
+      <!-- ////////// SPEECH BUBBLE 4 (SVG ICON AND TEXT) ////////// -->
+      <div class="speech-bubble-right-contents">
+        <div class="svg-image">
+          <svg width="12.5vw" alt= "Angry-looking speech bubble with symbols inside it." viewBox="0 0 723 738" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="exaggerate">
+              <rect id="Rectangle 6" x="46" y="58" width="631" height="621" fill="white" />
+              <g id="lines">
+                <path id="Vector 6" d="M144 153L69.5 104.5" stroke="black" stroke-width="20" stroke-linecap="round" />
+                <path id="Vector 7" d="M171.483 120.017L144 85" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <path id="Vector 10" d="M597.428 549.573L658.427 589.674" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <path id="Vector 11" d="M582.396 585.505L607.686 617.08" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <path id="Vector 8" d="M589.169 153L654.169 105" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+                <path id="Vector 9" d="M565.8 120.017L589.614 85" stroke="black" stroke-width="20"
+                  stroke-linecap="round" />
+              </g>
+              <g id="speech-bbl">
+                <path id="Vector 5"
+                  d="M269.5 578L165 657L200.5 578H165L224.5 488C206.5 454.8 157.333 474.167 135 488C171 416 120 362 90 344C162 327.6 170 241.167 165 200C232.6 218 285.5 182.5 303.5 162.5C359.1 208.9 417.667 181.833 440 162.5C486.4 207.7 554.333 206.333 582.5 200C564.5 290 622.333 333.5 653.5 344C584.7 375.6 592.5 453.167 605 488C546.6 454.8 510.667 501.833 500 529.5C443.2 480.3 389 529 369 559.5C321 462.3 259 519 234 559.5L269.5 578Z"
+                  fill="white" stroke="#73A684" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+                <path id="%#$"
+                  d="M291.019 294L226.059 414.48H240.299L305.259 294H291.019ZM224.939 326.64C224.939 320.88 225.313 316.507 226.059 313.52C226.806 310.427 228.779 308.88 231.979 308.88C235.179 308.88 237.153 310.427 237.899 313.52C238.646 316.507 239.019 320.88 239.019 326.64C239.019 333.04 238.646 337.84 237.899 341.04C237.153 344.133 235.179 345.68 231.979 345.68C228.779 345.68 226.806 344.133 226.059 341.04C225.313 337.84 224.939 333.04 224.939 326.64ZM207.979 327.28C207.979 332.4 208.299 336.88 208.939 340.72C209.579 344.56 210.753 347.76 212.459 350.32C214.273 352.88 216.726 354.8 219.819 356.08C223.019 357.253 227.073 357.84 231.979 357.84C236.993 357.84 241.046 357.253 244.139 356.08C247.233 354.8 249.633 352.88 251.339 350.32C253.153 347.76 254.379 344.56 255.019 340.72C255.659 336.88 255.979 332.4 255.979 327.28C255.979 322.16 255.659 317.68 255.019 313.84C254.379 310 253.153 306.8 251.339 304.24C249.633 301.68 247.233 299.813 244.139 298.64C241.046 297.36 236.993 296.72 231.979 296.72C227.073 296.72 223.019 297.36 219.819 298.64C216.726 299.813 214.273 301.68 212.459 304.24C210.753 306.8 209.579 310 208.939 313.84C208.299 317.68 207.979 322.16 207.979 327.28ZM275.819 381.68C275.819 386.907 276.139 391.44 276.779 395.28C277.419 399.013 278.593 402.16 280.299 404.72C282.113 407.173 284.566 408.933 287.659 410C290.859 411.173 294.913 411.76 299.819 411.76C304.833 411.76 308.886 411.173 311.979 410C315.073 408.933 317.473 407.173 319.179 404.72C320.993 402.16 322.219 399.013 322.859 395.28C323.499 391.44 323.819 386.907 323.819 381.68C323.819 376.56 323.499 372.08 322.859 368.24C322.219 364.4 320.993 361.2 319.179 358.64C317.473 356.08 315.073 354.213 311.979 353.04C308.886 351.76 304.833 351.12 299.819 351.12C294.913 351.12 290.859 351.76 287.659 353.04C284.566 354.213 282.113 356.08 280.299 358.64C278.593 361.2 277.419 364.4 276.779 368.24C276.139 372.08 275.819 376.56 275.819 381.68ZM292.779 381.04C292.779 375.28 293.153 370.907 293.899 367.92C294.646 364.827 296.619 363.28 299.819 363.28C303.019 363.28 304.993 364.827 305.739 367.92C306.486 370.907 306.859 375.28 306.859 381.04C306.859 387.44 306.486 392.24 305.739 395.44C304.993 398.533 303.019 400.08 299.819 400.08C296.619 400.08 294.646 398.533 293.899 395.44C293.153 392.24 292.779 387.44 292.779 381.04ZM384.831 364.24L387.231 344.72H402.911L400.351 364.24H384.831ZM355.391 364.24V382.16H367.231L363.711 410H379.231L382.591 382.16H398.271L394.751 410H410.271L413.791 382.16H427.551V364.24H415.871L418.431 344.72H432.191V326.8H420.511L424.031 298.96H408.511L404.991 326.8H389.471L392.831 298.96H377.471L373.951 326.8H360.191V344.72H371.871L369.311 364.24H355.391ZM492.266 411.76V425.68H502.506V411.76C513.066 411.013 521.066 408.08 526.506 402.96C532.052 397.84 534.826 389.52 534.826 378C534.826 373.52 534.346 369.733 533.386 366.64C532.426 363.547 531.092 360.933 529.386 358.8C527.679 356.56 525.599 354.693 523.146 353.2C520.799 351.707 518.132 350.32 515.146 349.04L502.506 343.92V313.68C505.279 314.533 507.199 316.347 508.266 319.12C509.332 321.787 509.919 325.147 510.026 329.2H532.106V326.96C532.106 323.44 531.679 319.973 530.826 316.56C529.972 313.147 528.426 310.053 526.186 307.28C523.946 304.507 520.906 302.213 517.066 300.4C513.332 298.48 508.479 297.253 502.506 296.72V285.68H492.266V296.72C482.666 297.787 475.252 301.04 470.026 306.48C464.906 311.813 462.346 319.44 462.346 329.36C462.346 336.72 464.052 343.013 467.466 348.24C470.879 353.36 476.479 357.307 484.266 360.08L492.266 362.96V395.28C490.132 394.747 488.426 393.893 487.146 392.72C485.972 391.44 485.066 389.947 484.426 388.24C483.786 386.533 483.359 384.667 483.146 382.64C483.039 380.507 482.986 378.32 482.986 376.08H460.906V379.44C460.906 383.6 461.279 387.547 462.026 391.28C462.879 395.013 464.426 398.373 466.666 401.36C468.906 404.24 472.052 406.587 476.106 408.4C480.266 410.107 485.652 411.227 492.266 411.76ZM492.266 313.68V339.28C487.039 336.293 484.426 331.813 484.426 325.84C484.426 319.227 487.039 315.173 492.266 313.68ZM502.506 395.28V366.96C505.599 368.56 507.892 370.533 509.386 372.88C510.986 375.227 511.786 378.427 511.786 382.48C511.786 385.467 511.039 388.187 509.546 390.64C508.159 392.987 505.812 394.533 502.506 395.28Z"
+                  fill="#E37826" />
+              </g>
+            </g>
+          </svg><!--(Figure 28. "Speech Bubble free icon." 2022, Digital illustration. Produced from flaticon)-->
+        </div>
+        <div class="speech-bubble-text-right">
+          <h2>Don't exaggerate.</h2>
+          <p>Make sure you are honest with <br>them about potential harms of vaping, <br>without exaggerating statements.
+            Use <br>statistical information and case studies <br>to help you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ////////// DONATE AND FOOTER ////////// -->
+  <div id="donate-content">
+    <h1>Donate to make a difference.</h1>
+    <!-- ////////// LUNG FOUNDATION IMAGE AND PARAGRAPH ////////// -->
+    <div class="lung-foundation-and-text">
+      <div class="lung-foundation-container">
+        <img src="images/lung-foundation.png" class="lung-foundation" alt="Lung Foundation Australia logo"><!--(Figure 29. "[LF-Logo]." 2022, Digital illustration. Produced from Lung Foundation Australia)-->
+      </div>
+      <p>
+        In the world of today, there are many gaps in Vaping <br class="break1">research. We still do not know the full
+        extent of vaping <br class="break1">and how it is detrimentally harmful to us. Thankfully, <br
+          class="break1">research facilities like Lung Foundation Australia is <br class="break1">dedicated to improving
+        the lives of Australians <br class="break1">impacted by lung disease and lung cancer.<br><br> They research into
+        a vast collection of lung-health issues <br class="break1">and topics, including vaping. With your contribution,
+        we <br class="break1">can make a difference together and ensure that our lung<br class="break1"> health, and our
+        children's lung health are protected.
+      </p>
+    </div>
+    <!-- ////////// DONATE BUTTON ////////// -->
+    <div class="donate-btn-container">
+      <button id="donate-button">Donate Now</button>
+    </div>
+  </div>
+  <!-- ////////// FOOTER ////////// -->
+  <div id="footer">
+    <div class="footer-contact-us">
+      <h3>Contact us on our Social Media</h3>
+      <!-- ////////// SOCIAL MEDIA ICONS ////////// -->
+      <div class="social-media-icons">
+        <sl-icon name="youtube" alt="Youtube icon."></sl-icon><!--(Figure 30. "youtube." n.d, icon. Accessed on November 15 2022. Produced from Shoelace)-->
+        <sl-icon name="facebook" alt="Facebook icon."></sl-icon><!--(Figure 31. "facebook." n.d, icon. Accessed on November 15 2022. Produced from Shoelace)-->
+        <sl-icon name="instagram" alt="Instagram icon."></sl-icon><!--(Figure 32. "instagram." n.d, icon. Accessed on November 15 2022. Produced from Shoelace)-->
+        <sl-icon name="linkedin" alt="Linkedin icon."></sl-icon><!--(Figure 33. "linkedin." n.d, icon. Accessed on November 15 2022. Produced from Shoelace)-->
+      </div>
+    </div>
+    <!-- ////////// DISCLAIMER ////////// -->
+    <p>
+      This website has been created as part of an assignment in an approved course of study for Curtin University and
+      contains copyright material not created by the author. All copyright material used remains copyright of the
+      respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of
+      Australia). No part of this work may be reproduced without consent of the original copyright owners. See code
+      comments for references.
+    </p>
+  </div>
+
+  <!-- This code is here to make the image carousel work. -->
+  <script src="js/glider.min.js"></script>
+  <script>
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1,
+      draggable: false,
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next',
+      }
+    })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollToPlugin.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- ////////// IMAGE REFERENCES ////////// -->
+<!--Figure 1. Koblenz, Lauren. "[Vape Free Brandmark]." October 20 2022, Digital illustration.-->
+<!--Figure 2. Shoelace. "list." n.d, icon-button. Accessed on October 26 2022. Produced from Shoelace. https://shoelace.style/components/icon-->
+<!--Figure 3. Shoelace. "music-note-beamed." n.d, icon-button. Accessed on October 23 2022. Produced from Shoelace. https://shoelace.style/components/icon-->
+<!--Figure 4. Shoelace. "tooltip." n.d, tooltip. Accessed on October 23 2022. Produced from Shoelace. https://shoelace.style/components/tooltip-->
+<!--Figure 5. Shoelace. "arrow-down." n.d, icon-button. Accessed on October 23 2022. Produced from Shoelace. https://shoelace.style/components/icon-->
+<!--Figure 6. Koblenz, Lauren. "[Orange vape vector illustration]." October 23 2022, Digital illustration.-->
+<!--Figure 7. Vectorstock. "[White vape with lung icon and text]." 2022, Digital illustration. Accessed and edited on October 23 2022. Produced from Vectorstock. https://www.vectorstock.com/royalty-free-vector/damaged-lungs-flat-icon-vector-30909975-->
+<!--Figure 8. Koblenz, Lauren. "[Green vape vector illustration]." October 25 2022, Digital illustration.-->
+<!--Figure 9. Iconfinder, "Brain damage, crash, impact icon." 2022, Digital illustration. Accessed and edited on October 24 2022, Produced from Iconfinder. https://www.iconfinder.com/icons/2283845/brain_damage_crash_impact_memory_mind_neurology_sick_head_icon-->
+<!--Figure 10. Koblenz, Lauren. "[Orange vape vector illustration]." October 23 2022, Digital illustration.-->
+<!--Figure 11. SVG Silh, "SVG > pollution bacteria caution poison" .n.d. Digital image. Accessed and edited on October 8 2022. Digital image. https://svgsilh.com/image/37775.html-->
+<!--Figure 12. Koblenz, Lauren. "[Green vape vector illustration]." October 25 2022, Digital illustration.-->
+<!--Figure 13. The Noun Project, "lie" .n.d. Digital image. Accessed and edited on October 25 2022. Digital image. https://thenounproject.com/icon/lie-15281/-->
+<!--Figure 14. Shoelace. "arrow-left." n.d, icon-button. Accessed and edited on October 26 2022. Produced from Shoelace. https://shoelace.style/components/icon-->
+<!--Figure 15. Queensland Mental Health Commission, "Loneliness kills." , Digital illustration. Accessed and edited on October 8 2022. Produced from Queensland Mental Health Commission. https://qmhc.shorthandstories.com/---loneliness-kills--/index.html-->
+<!--Figure 16. Koblenz, Lauren. "[vaping affects grades]." October 26 2022, Digital illustration.-->
+<!--Figure 17. Koblenz, Lauren. "[vaping is expensive]." October 26 2022, Digital illustration.-->
+<!--Figure 18. Koblenz, Lauren. "[vaping affects relationships]." October 26 2022, Digital illustration.-->
+<!--Figure 19. Shoelace. "arrow-right." n.d, icon-button. Accessed on October 26 2022. Produced from Shoelace. https://shoelace.style/components/icon-->
+<!--Figure 20. Picsart, "[Clouds Smoke Fog Alienized]." 2020, Digital illustration. Accessed October 8 2022. Produced from Picsart. https://picsart.com/i/337096076142211-->
+<!--Figure 21. Koblenz, Lauren. "[Left speech bubble - orange]." October 13 2022, Digital illustration.-->
+<!--Figure 22. "Free PNG & SVG 291344 - Noun Project." 2015, Digital illustration. Accessed and edited on October 13 2022. Produced from The noun project. https://thenounproject.com/icon/more-information-291344/ -->
+<!--Figure 23. Koblenz, Lauren. "[Right speech bubble - green]." October 13 2022, Digital illustration.-->
+<!--Figure 24. "Free PNG & SVG 1181481 - Noun Project." 2017, Digital illustration. Accessed and edited on October 13 2022. Produced from The Noun Project. https://thenounproject.com/icon/calm-1181481/-->
+<!--Figure 25. Koblenz, Lauren. "[Left speech bubble - orange]." October 13 2022, Digital illustration.-->
+<!--Figure 26. Flaticon, "Ear free icon." 2022, Digital illustration. Accessed October 13 2022. Produced from Flaticon. https://www.flaticon.com/free-icon/ear_2258925?related_id=2258925&origin=search-->
+<!--Figure 27. Koblenz, Lauren. "[Right speech bubble - green]." October 13 2022, Digital illustration.-->
+<!--Figure 28. Flaticon, "Speech Bubble free icon." 2022, Digital illustration. Accessed and edited on October 13 2022. Produced from Flaticon. https://www.flaticon.com/free-icon/speech-bubble_5957860?term=yell&page=1&position=1&page=1&position=1&related_id=5957860&origin=search-->
+<!--Figure 29. Lung Foundation Australia, "[LF-Logo]." 2022, Digital illustration. Accessed October 13 2022. Produced from Lung Foundation Australia)-->
+<!--Figure 30. Shoelace. "youtube." n.d, icon. Accessed on November 15 2022. Produced from Shoelace. https://shoelace.style/components/icon-->
+<!--Figure 31. Shoelace. "facebook."  n.d, icon. Accessed on November 15 2022. Produced from Shoelace. https://shoelace.style/components/icon-->
+<!--Figure 32. Shoelace. "instagram."  n.d, icon. Accessed on November 15 2022. Produced from Shoelace. https://shoelace.style/components/icon-->
+<!--Figure 33. Shoelace. "linkedin."  n.d, icon. Accessed on November 15 2022. Produced from Shoelace. https://shoelace.style/components/icon-->
+
+
+<!-- ////////// CODE LIBRARY REFERENCES ////////// -->
+<!--LaViska, Cory. Shoelace. n.d. https://shoelace.style/-->
+<!--Piscitelli, Nick. Glider.js. 2018. https://nickpiscitelli.github.io/Glider.js/-->
+<!--GreenSock. GSAP. 2020. https://greensock.com/-->

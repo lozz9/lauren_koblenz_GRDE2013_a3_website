@@ -1,0 +1,2012 @@
+/* The following code was written for the maximum screen size of 5120 x 2880 px. However this code should work for desktop sizes smaller than this. Media queries have been set for sizes 1024 x 768 px and smaller. */
+
+
+/* ==================== GENERAL STYLING ==================== */
+* {
+    box-sizing: border-box;
+    /* This allows the widths, paddings and margins to work nicely */
+    list-style: none;
+    text-decoration: none;
+    /*--this gets rid of the default dot points
+ --*/
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* When a user clicks on a link in the navigation bar, it will glide smoothly down the webpage.*/
+}
+
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    /* colour american spelling*/
+    font-family: sans-serif;
+    color: white;
+}
+
+a {
+    /*-- all links--*/
+    color: rgb(255, 255, 255);
+    /*--This changes all links to white. By default links are purple --*/
+}
+
+h1 {
+    padding-bottom: 2vh;
+    font-size: 3.5vw;
+}
+
+p {
+    font-size: 1.3vw;
+}
+
+h2 {
+    font-size: 2vw;
+    padding-top: 2vh;
+}
+
+
+sl-tooltip::part(body) {
+    font-size: 1.2vw;
+    max-width: 20vw;
+    /* this ensures that the type does not wrap to early, on the mac lab sizing*/
+    width: 11vw;
+    background-color: #3b5042;
+}
+
+sl-tooltip::part(base__arrow) {
+    background-color: #3b5042;
+}
+
+/* ==================== lets get started button ==================== */
+
+
+#get-started-btn {
+    border-radius: 2vw;
+    /* This curves the corner of the button to make it a pill-button. */
+    padding: 1vh 3vw;
+    /* 1vh top & bottom,3vw left and right. This controls the spacing around text inside button */
+    text-align: center;
+    font-size: 1.6vw;
+    margin: auto;
+    width: 37%;
+    background-color: #73A684;
+}
+
+
+/* ==================== MAIN NAVIGATION ==================== */
+
+#logo-container {
+    width: 15%;
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
+
+#logo {
+    width: 100%;
+}
+
+#music-btn sl-icon-button::part(base) {
+    color: #ffffff;
+    font-size: 1.5vw;
+    transition: 0.7s ease;
+}
+
+
+#music-btn sl-icon-button::part(base):hover {
+    color: #73A684;
+    /* this targets music icon. This pairs up with the transition mentioned above this code.*/
+}
+
+#music-btn sl-icon-button {
+    display: none;
+}
+
+
+#music-btn {
+    margin-left: 2vw;
+    margin-right: 1vw;
+}
+
+
+ul li {
+    display: inline-block;
+    /*-- this alignes all the main menus, except the music icon--*/
+    padding-right: 2vw;
+    font-size: 1.5vw;
+}
+
+ul li a {
+    /* this targets all the anchor tags in the navigation bar*/
+    transition: 0.7s ease;
+}
+
+ul li a:hover {
+    color: #73A684;
+    /* this targets all the anchor tags in the navigation bar. This pairs up with the transition mentioned above this code.*/
+}
+
+#navigation-items nav, #navigation-items div {
+    display: inline-block;
+    /*-- this alignes all the main menus WITH the music icon--*/
+    vertical-align: middle;
+}
+
+#logo-container, #navigation-items {
+    display: inline-block;
+    /*-- this alignes all the main menus (including settings icon) with the logo--*/
+    vertical-align: middle;
+
+}
+
+#navigation-items {
+    float: right;
+    /*-- this positions the navigation menus to the right side of the frame (at all times)--*/
+    margin: 0;
+    padding-top: 1.5vh;
+    padding-right: 1.5vw;
+}
+
+#navigation-all {
+    z-index: 99;
+    position: sticky;
+    top: 0%;
+    height: 7vh;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+
+#hamburger-btn sl-icon-button::part(base) {
+    color: #ffffff;
+    font-size: 4vw;
+    transition: 0.7s ease;
+}
+
+
+#hamburger-btn sl-icon-button::part(base):hover {
+    color: #73A684;
+    /* this targets music icon. This pairs up with the transition mentioned above this code.*/
+}
+
+#hamburger-btn sl-icon-button, #hamburger-btn {
+    display: none;
+}
+
+
+
+/* ==================== MAIN HOME CONTENT ==================== */
+
+#home-content {
+    width: 100vw;
+    text-align: center;
+    height: 100vh;
+    position: static;
+}
+
+#home-headings-arrow {
+    position: absolute;
+    z-index: 5;
+    left: 20%;
+    top: 20%;
+}
+
+#main-headings {
+    padding-top: 20vh;
+    padding-bottom: 14vh;
+}
+
+
+#down-arrow sl-icon-button::part(base) {
+    color: #73A684;
+    font-size: 3vw;
+}
+
+#down-arrow {
+    margin-top: 13vh;
+    display: none;
+}
+
+#smoke-vid {
+    opacity: 0;
+    width: 100%;
+}
+
+
+/* ==================== STATISTICS CONTENT AND CARDS ==================== */
+
+#statistics-content {
+    text-align: center;
+    position: static;
+    height: 100vh;
+    padding-top: 15vh;
+}
+
+#stats-imgs {
+    height: 100%;
+    width: 100%;
+    position: static;
+
+}
+
+.white-vape1, .white-vape2, .white-vape3, .white-vape4, .green-vape, .orange-vape {
+    width: 100%;
+}
+
+#flip-card1, #flip-card2, #flip-card3, #flip-card4 {
+    display: inline-block;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    width: 22%;
+    height: auto;
+    position: static;
+    /* This helps create the 3d effect */
+}
+
+#stats-imgs {
+    padding-top: 10vh;
+    width: 100%;
+    position: static;
+}
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    /* This helps create the 3d effect */
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+#flip-card1:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+#flip-card2:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+#flip-card3:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+#flip-card4:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* This is for Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* ==================== SMOKING VS VAPING ==================== */
+
+#smoking-vaping-content {
+    padding-left: 11vw;
+    padding-top: 33vh;
+    height: 100vh;
+    position: static;
+}
+
+#smoking-vaping-vid-container {
+    width: 45%;
+    height: 40vh;
+}
+
+#smoking-vaping-vid {
+    width: 100%;
+    height: 100%;
+}
+
+#smoking-vaping-vid-container, #smoking-vaping-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#smoking-vaping-text {
+    padding-left: 4.5vw;
+}
+
+
+
+/* ==================== HOW TO QUIT ==================== */
+#quiting-content {
+    width: 100%;
+    padding-left: 11vw;
+    height: 100vh;
+    padding-top: 16vh;
+    position: static;
+}
+
+.glider-contain-multiple {
+    width: 35%;
+    height: auto;
+    position: relative;
+    right: -11vw;
+
+}
+
+.glider-next sl-icon, .glider-prev sl-icon {
+    color: #73A684;
+    font-size: 4vw;
+}
+
+#cloud {
+    width: 150%;
+    margin: 0%;
+    position: absolute;
+    z-index: 4;
+    left: -25%;
+    bottom: -22vh;
+}
+
+#quiting-text,.glider-contain-multiple {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#quiting-text {
+    width: 40%;
+}
+
+
+/* ==================== TALKING TO OTHERS ==================== */
+
+#talking-to-others-content {
+    width: 100%;
+    height: 175vh;
+    padding-top: 14vh;
+    position: static;
+}
+
+#talking-intro-text {
+    text-align: center;
+    position: relative;
+    padding-bottom: 8vh;
+}
+
+#talking-to-others-content h2 {
+    font-size: 1.5vw;
+}
+
+.speech-bubble-text-left p, .speech-bubble-text-right p {
+    font-size: 0.9vw;
+}
+
+/* ==================== orange speech bubble ==================== */
+.speech-bubble-left-container {
+    margin-left: 6vw;
+    position: relative;
+    width: 38%;
+}
+
+#orange-bubble, #orange-bubble2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.speech-bubble-left-contents {
+    display: flex;
+    vertical-align: middle;
+    position: absolute;
+    top: 12%;
+    left: 13%;
+}
+
+.speech-bubble-text-left {
+    display: block;
+    padding-left: 2vw;
+    color: #E37826;
+}
+
+.speech-bubble-text-left h2 {
+    padding-bottom: 1vh;
+}
+
+/* ==================== green speech bubble ==================== */
+
+.speech-bubble-right-container {
+    position: relative;
+    width: 38%;
+    right: -55vw;
+}
+
+#green-bubble, #green-bubble2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.speech-bubble-right-contents {
+    display: flex;
+    vertical-align: middle;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+}
+
+.speech-bubble-text-right {
+    display: block;
+    padding-left: 2vw;
+    color: #73A684;
+}
+
+.speech-bubble-text-right h2 {
+    padding-bottom: 1vh;
+}
+
+/* ==================== animations for speech bubble icons ==================== */
+
+#approach-calmly:hover #sun {
+    animation: spinning-sun 4s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes spinning-sun {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+#start-info:hover #info-glass {
+    animation: pulse-info-glass 0.8s infinite alternate ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes pulse-info-glass {
+    from {
+        transform: scale(100%);
+    }
+
+    to {
+        transform: scale(110%);
+    }
+}
+
+#listen:hover #sound-waves {
+    animation: fade-waves 1s ease-in-out alternate infinite;
+}
+
+@keyframes fade-waves {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.1;
+    }
+}
+
+#exaggerate:hover #speech-bbl {
+    animation: gelatine-speech-bbl 0.5s ease-in-out alternate infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes gelatine-speech-bbl {
+
+    from,
+    to {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
+
+/* ==================== DONATE AND FOOTER ==================== */
+
+#donate-content {
+    width: 100%;
+    height: 70vh;
+    position: static;
+}
+
+#donate-content h1 {
+    text-align: center;
+}
+
+.lung-foundation {
+    width: 100%;
+}
+
+.lung-foundation-container {
+    width: 40%;
+}
+
+.lung-foundation-container, .lung-foundation-and-text p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lung-foundation-and-text p {
+    padding-left: 3vw;
+}
+
+.lung-foundation-and-text {
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.donate-btn-container {
+    text-align: center;
+}
+
+#donate-button {
+    border-radius: 2vw;
+    /* This curves the corner of the button to make it a pill-button. */
+    padding: 1vh 3vw;
+    /* 10px top & bottom, 25px left and right. This controls the spacing around text inside button */
+    text-align: center;
+    font-size: 1.6vw;
+    margin: auto;
+    width: 20%;
+    background-color: #73A684;
+}
+
+#footer {
+    background-color: #ffffff;
+    width: 100vw;
+}
+
+h3 {
+    font-size: 1.2vw;
+    color: #E37826;
+    padding-bottom: 2vh;
+}
+
+.social-media-icons sl-icon {
+    display: inline-block;
+    vertical-align: center;
+    color: #000000;
+    font-size: 2vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+.footer-contact-us {
+    width: 20%;
+    padding-left: 2vw;
+}
+
+
+#footer p {
+    width: 75%;
+    color: #E37826;
+    font-size: 0.8vw;
+    padding-left: 10vw;
+}
+
+.footer-contact-us, #footer p {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+
+/* ==================== RESPONSIVE DESIGN (for tablet and mobile) ==================== */
+
+@media screen and (max-width: 1024px) /* height= 768*/
+{
+
+    /* ==================== general styling ==================== */
+
+    h3 {
+        font-size: 1.5vw;
+    }
+
+    /* ==================== Navigation ==================== */
+
+    #logo-container {
+        width: 18%;
+        padding-left: 1.2vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    #navigation-items {
+        padding-top: 0vh;
+    }
+
+    #navigation-all {
+        height: 11vh;
+    }
+
+    ul li {
+        font-size: 1.7vw;
+        padding-top: 3.5vh;
+    }
+
+    #music-btn {
+        right: 7vw;
+        padding-top: 3vh;
+    }
+
+    #music-btn sl-icon-button::part(base) {
+        font-size: 2vw;
+    }
+
+
+    /* ==================== navigation bar ==================== */
+
+    #statistics-content {
+        padding-top: 10vh;
+        height: 92vh;
+        scroll-margin-top: 10vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    #flip-card1, #flip-card2, #flip-card3, #flip-card4 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    /* ==================== smoking vs vaping ==================== */
+
+    #smoking-vaping-content {
+        padding-top: 20vh;
+        height: 68vh;
+        padding-left: 6vw;
+        scroll-margin-top: 5vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    #smoking-vaping-vid-container {
+        width: 50%;
+    }
+
+
+    /* ==================== quiting content ==================== */
+
+    #quiting-content {
+        scroll-margin-top: 10vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+        padding-left: 6vw;
+    }
+
+    .glider-contain-multiple {
+        width: 36%;
+        right: -10vw;
+    }
+
+    #cloud {
+        bottom: -21vh;
+        left: -30%;
+        width: 155%;
+    }
+
+    /* ==================== talking to others ==================== */
+
+    #talking-to-others-content {
+        padding-top: 7vh;
+        height: 147vh;
+        scroll-margin-top: 10vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    .speech-bubble-left-container {
+        width: 41%;
+    }
+
+    .speech-bubble-right-container {
+        width: 41%;
+        right: -52vw;
+    }
+
+    #talking-to-others-content h2 {
+        font-size: 1.8vw;
+    }
+
+    .speech-bubble-text-left p, .speech-bubble-text-right p {
+        font-size: 1.2vw;
+    }
+
+
+    /* ==================== donate and footer ==================== */
+
+    #donate-content {
+        height: 56vh;
+    }
+
+    .footer-contact-us {
+        width: 25%;
+    }
+
+    .social-media-icons sl-icon {
+        font-size: 2.7vw;
+        padding-left: 1.5vw;
+    }
+
+    #footer p {
+        width: 72%;
+        font-size: 1vw;
+        padding-left: 8vw;
+    }
+}
+
+@media screen and (max-width: 896px) /* height= 414*/
+{
+
+    /* ==================== General styling ==================== */
+
+    h1 {
+        font-size: 3.5vw;
+        padding-bottom: 3vh;
+    }
+
+    sl-tooltip::part(body) {
+        font-size: 1.2vw;
+    }
+
+    p {
+        font-size: 1.7vw;
+    }
+
+    /* ==================== navigation ==================== */
+
+    #hamburger-btn sl-icon-button, #hamburger-btn {
+        display: block
+    }
+
+    #hamburger-btn {
+        float: right;
+        top: 1vh;
+        padding-top: 1.75vh;
+    }
+
+    ul {
+        display: none;
+    }
+
+    nav {
+        margin-left: 40%;
+    }
+
+    ul li {
+        display: block;
+        /*-- this stacks the navigation links, except the music icon--*/
+        font-size: 2vw;
+        margin-bottom: 3.5vh;
+        padding-left: 3.5vw;
+        text-align: center;
+    }
+
+
+    #navigation-items {
+        float: none;
+        /*-- this stops the navigation menus from floating right--*/
+        padding-top: 0%;
+    }
+
+
+    #logo-container {
+        width: 18%;
+        padding-bottom: 1vh;
+        padding-left: 3vw;
+        padding-top: 4vh;
+    }
+
+    #navigation-all {
+        border-bottom-style: solid;
+        border-bottom-color: white;
+        height: auto;
+    }
+
+    #logo-container, #navigation-items {
+        display: block;
+        /*-- this stops all the main menus (including settings icon)from aligning vertically with the logo--*/
+    }
+
+    #hamburger-btn, #logo-container {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #music-btn {
+        position: absolute;
+        z-index: 100;
+        top: -0.7vh;
+        right: 7vw;
+    }
+
+    #music-btn sl-icon-button::part(base) {
+        font-size: 3vw;
+    }
+
+    ul.show {
+        /*-- when the classname "show" is applied then the menus will appear. Placing this towards the bottom of the keyframe causes it to work.--*/
+        display: block;
+        position: absolute;
+        left: 0vw;
+        border-bottom-style: solid;
+        border-bottom-color: white;
+        background-color: black;
+        width: 100%;
+    }
+
+
+    /* ==================== home content ==================== */
+    
+    #home-content {
+        height: 120vh;
+    }
+
+    #smoke-vid {
+        -o-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+        transform: scaleX(-1);
+        /*-- this flips the video horizontally. These different lines of code works for different web browsers.--*/
+    }
+
+    #home-headings-arrow {
+        top: 28%;
+        left: 20.5%;
+    }
+
+    #down-arrow {
+        margin-top: 11vh;
+    }
+
+    #main-headings {
+        padding-bottom: 12vh;
+    }
+
+    #down-arrow sl-icon-button::part(base) {
+        font-size: 5vw;
+    }
+
+    #get-started-btn {
+        border-radius: 2vw;
+        padding: 1.2vh 5.5vw;
+        font-size: 1.8vw;
+        width: 45%;
+    }
+
+
+    /* ==================== statistics ==================== */
+
+    #statistics-content {
+        height: 165vh
+    }
+
+    #flip-card1, #flip-card2, #flip-card3, #flip-card4 {
+        width: 24%;
+    }
+
+
+    /* ==================== smoking vs vaping content ==================== */
+
+    #smoking-vaping-content {
+        padding-top: 0%;
+        padding-left: 0%;
+        position: relative;
+        height: 100vh;
+        scroll-margin-top: 27vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    #smoking-vaping-vid-container, #smoking-vaping-text {
+        display: block;
+        position: absolute;
+    }
+
+    #smoking-vaping-text {
+        z-index: -5;
+        top: 4vh;
+        padding-left: 27%;
+        text-align: center;
+    }
+
+    #smoking-vaping-vid-container {
+        width: 47%;
+        height: auto;
+        bottom: 1vh;
+        margin-left: 28vw;
+    }
+
+    #smoking-vaping-vid-container, #smoking-vaping-text {
+        display: block;
+    }
+
+
+    /* ==================== how to quit ==================== */
+
+    #quiting-content {
+        padding-top: 0vh;
+        margin-top: 28vh;
+        padding-left: 0%;
+        height: 150vh;
+        scroll-margin-top: 20vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    #quiting-text, .glider-contain-multiple {
+        display: block;
+    }
+
+    #quiting-text {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 9vh;
+    }
+
+    #quiting-text h1 br {
+        display: none;
+    }
+
+    .glider-contain-multiple {
+        right: 0%;
+        left: 35vw;
+        width: 30%;
+    }
+
+    #cloud {
+        bottom: -28vh;
+    }
+
+    .glider-next sl-icon, .glider-prev sl-icon {
+        font-size: 5vw;
+    }
+
+
+    /* ==================== talking to others ==================== */
+
+    #talking-to-others-content {
+        padding-top: 5vh;
+        height: 285vh;
+        scroll-margin-top: 17vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    .svg-image {
+        width: 15vw;
+    }
+
+    svg {
+        width: 15vw;
+        height: auto;
+    }
+
+    .speech-bubble-left-container {
+        width: 50%;
+        padding-bottom: 8vh;
+        margin-left: 7vw;
+    }
+
+    .speech-bubble-left-contents {
+        width: 42vw;
+    }
+
+    .speech-bubble-text-left {
+        padding-left: 4vw;
+    }
+
+    #talking-to-others-content h2 {
+        font-size: 1.9vw;
+        padding-bottom: 1.5vh;
+    }
+
+    .speech-bubble-right-container {
+        position: relative;
+        width: 50%;
+        right: -43vw;
+        padding-bottom: 8vh;
+    }
+
+    .speech-bubble-text-right {
+        padding-left: 4vw;
+    }
+
+    .speech-bubble-text-left p, .speech-bubble-text-right p {
+        font-size: 1.2vw;
+    }
+
+    /* ==================== donate ==================== */
+
+    #donate-content {
+        height: 160vh;
+        scroll-margin-top: 20vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    .lung-foundation-and-text {
+        margin: 0%;
+        position: relative;
+        height: 121vh;
+    }
+
+    .lung-foundation-container, .lung-foundation-and-text p {
+        display: block;
+        position: absolute;
+        left: 20vw;
+    }
+
+    .lung-foundation-and-text p {
+        z-index: -8;
+        top: 2vh;
+        width: 61vw;
+        padding-left: 0%;
+    }
+
+    .break1 {
+        display: none;
+    }
+
+    .lung-foundation-container {
+        z-index: -9;
+        bottom: 14vh;
+        width: 50vw;
+        margin-left: 4vw;
+    }
+
+    #donate-button {
+        border-radius: 3vw;
+        padding: 1.5vh 6vw;
+        font-size: 2vw;
+        width: 30%;
+    }
+
+    /* ==================== footer ==================== */
+
+    .footer-contact-us {
+        width: 30%;
+        padding-left: 2vw;
+    }
+
+    h3 {
+        font-size: 1.7vw;
+    }
+
+    .social-media-icons sl-icon {
+        font-size: 3vw;
+        padding-left: 1.5vw;
+    }
+
+    #footer p {
+        width: 69%;
+        font-size: 1vw;
+        padding-left: 6vw;
+    }
+}
+
+@media screen and (max-width: 768px) /* height= 1024*/
+{
+
+    /* ==================== General styling ==================== */
+
+    h1 {
+        font-size: 4.5vw;
+        padding-bottom: 2vh;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+        padding-top: 0%;
+    }
+
+    sl-tooltip::part(body) {
+        font-size: 2vw;
+    }
+
+
+    /* ==================== navigation ==================== */
+
+    ul li {
+        margin-bottom: 3vh;
+    }
+
+
+    #logo-container {
+        width: 26%;
+        padding-bottom: 3vh;
+        padding-left: 3vw;
+        padding-top: 3vh;
+    }
+
+
+    /* ==================== home content ==================== */
+    #home-content {
+        height: 45vh;
+    }
+
+    #home-headings-arrow {
+        top: 7%;
+        left: 13.5%;
+    }
+
+    #down-arrow {
+        margin-top: 7vh;
+    }
+
+    #main-headings {
+        padding-bottom: 7vh;
+    }
+
+
+    /* ==================== statistics ==================== */
+
+    #statistics-content {
+        height: 80vh;
+        padding-top: 10vh;
+        scroll-margin-top: 10vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    /* ==================== smoking vs vaping content ==================== */
+
+    #smoking-vaping-content {
+        height: 63vh;
+        scroll-margin-top: 27vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    #smoking-vaping-vid-container {
+        width: 76%;
+        height: auto;
+        bottom: 5vh;
+        margin-left: 13vw;
+    }
+
+
+    /* ==================== how to quit ==================== */
+
+    #quiting-content {
+        padding-top: 10vh;
+        padding-left: 0%;
+        margin-top: 0vh;
+        height: 95vh;
+        scroll-margin-top: 10vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    #quiting-text {
+        padding-bottom: 7vh;
+    }
+
+    .glider-contain-multiple {
+        right: 0%;
+        left: 25vw;
+        width: 52%;
+    }
+
+    #cloud {
+        bottom: -16vh;
+    }
+
+    .glider-next sl-icon, .glider-prev sl-icon {
+        font-size: 5.5vw;
+
+    }
+
+
+    /* ==================== talking to others ==================== */
+
+    #talking-to-others-content {
+        padding-top: 9vh;
+        height: 145vh;
+        scroll-margin-top: 17vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+
+    }
+
+    .svg-image {
+        width: 22vw;
+    }
+
+    svg {
+        width: 22vw;
+        height: auto;
+    }
+
+    .speech-bubble-left-container {
+        width: 69%;
+        padding-bottom: 4vh;
+        margin-left: 7vw;
+    }
+
+    .speech-bubble-left-contents {
+        width: 57vw;
+    }
+
+    #talking-to-others-content h2 {
+        font-size: 2.7vw;
+    }
+
+    .speech-bubble-right-container {
+        position: relative;
+        width: 69%;
+        right: -24vw;
+        padding-bottom: 4vh;
+    }
+
+    .speech-bubble-text-left p, .speech-bubble-text-right p {
+        font-size: 1.5vw;
+    }
+
+
+    /* ==================== donate ==================== */
+
+    #donate-content {
+        height: 66vh;
+        scroll-margin-top: 0vh;
+    }
+
+    .lung-foundation-and-text {
+        height: 45vh;
+    }
+
+    .lung-foundation-container {
+        bottom: 2vh;
+        width: 58vw;
+        margin-left: 0vw;
+    }
+
+    
+    /* ==================== footer ==================== */
+
+    .social-media-icons sl-icon {
+        font-size: 3.5vw;
+        padding-left: 1.2vw;
+    }
+
+    #footer p {
+        font-size: 1.4vw;
+    }
+}
+
+@media screen and (max-width: 667px) /* height= 375*/
+{
+
+    /* ==================== General styling ==================== */
+
+    h1 {
+        font-size: 3.5vw;
+        padding-bottom: 3vh;
+    }
+
+    sl-tooltip::part(body) {
+        font-size: 1.2vw;
+    }
+
+    p {
+        font-size: 1.7vw;
+    }
+
+    /* ==================== navigation ==================== */
+
+    #hamburger-btn {
+        float: right;
+        top: 1vh;
+        padding-top: 1.75vh;
+    }
+
+    ul {
+        display: none;
+    }
+
+    nav {
+        margin-left: 40%;
+    }
+
+    ul li {
+        display: block;
+        /*-- this stacks the navigation links, except the music icon--*/
+        font-size: 2vw;
+        margin-bottom: 3.5vh;
+        padding-left: 3.5vw;
+        text-align: center;
+    }
+
+    #navigation-items {
+        float: none;
+        /*-- this stops the navigation menus from floating right--*/
+        padding-top: 0%;
+
+    }
+
+    #logo-container {
+        width: 24%;
+        padding-bottom: 1vh;
+        padding-left: 3vw;
+        padding-top: 5vh;
+    }
+
+    #logo-container, #navigation-items {
+        display: block;
+        /*-- this stops all the main menus (including settings icon)from aligning vertically with the logo--*/
+
+    }
+
+    #hamburger-btn, #logo-container {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #music-btn sl-icon-button::part(base) {
+        font-size: 4vw;
+    }
+
+    #hamburger-btn sl-icon-button::part(base) {
+        font-size: 5vw;
+    }
+
+    ul.show {
+        /*-- when the classname "show" is applied then the menus will appear. Placing this towards the bottom of the keyframe causes it to work.--*/
+        display: block;
+    }
+
+    /* ==================== home content ==================== */
+    
+    #home-content {
+        height: 120vh;
+    }
+
+    #smoke-vid {
+        -o-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+        transform: scaleX(-1);
+        /*-- this flips the video horizontally. These different lines of code works for different web browsers.--*/
+    }
+
+    #home-headings-arrow {
+        top: 28%;
+        left: 20.5%;
+    }
+
+    #down-arrow {
+        margin-top: 11vh;
+    }
+
+    #main-headings {
+        padding-bottom: 12vh;
+    }
+
+    #down-arrow sl-icon-button::part(base) {
+        font-size: 5vw;
+    }
+
+    #get-started-btn {
+        border-radius: 3vw;
+        padding: 1.5vh 6vw;
+        font-size: 2vw;
+        width: 50%;
+    }
+
+
+    /* ==================== statistics ==================== */
+
+    #statistics-content {
+        height: 165vh
+    }
+
+    /* ==================== smoking vs vaping content ==================== */
+
+    #smoking-vaping-content {
+        padding-top: 0%;
+        padding-left: 0%;
+        position: relative;
+        height: 100vh;
+        scroll-margin-top: 27vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    #smoking-vaping-vid-container, #smoking-vaping-text {
+        display: block;
+        position: absolute;
+    }
+
+    #smoking-vaping-text {
+        z-index: -5;
+        top: 4vh;
+        padding-left: 27%;
+        text-align: center;
+    }
+
+    #smoking-vaping-vid-container {
+        width: 47%;
+        height: auto;
+        bottom: 1vh;
+        margin-left: 28vw;
+    }
+
+
+    #smoking-vaping-vid-container, #smoking-vaping-text {
+        display: block;
+    }
+
+    /* ==================== how to quit ==================== */
+
+
+    #quiting-content {
+        padding-top: 0vh;
+        margin-top: 28vh;
+        padding-left: 0%;
+        height: 150vh;
+        scroll-margin-top: 20vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    #quiting-text, .glider-contain-multiple {
+        display: block;
+    }
+
+    #quiting-text {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 9vh;
+    }
+
+    #quiting-text h1 br {
+        display: none;
+    }
+
+    .glider-contain-multiple {
+        right: 0%;
+        left: 35vw;
+        width: 30%;
+    }
+
+    #cloud {
+        bottom: -28vh;
+    }
+
+
+    .glider-next sl-icon, .glider-prev sl-icon {
+        font-size: 5vw;
+
+    }
+
+    /* ==================== talking to others ==================== */
+
+    #talking-to-others-content {
+        padding-top: 5vh;
+        height: 260vh;
+        scroll-margin-top: 17vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    .svg-image {
+        width: 15vw;
+    }
+
+    svg {
+        width: 15vw;
+        height: auto;
+    }
+
+    .speech-bubble-left-container {
+        width: 50%;
+        padding-bottom: 8vh;
+        margin-left: 7vw;
+    }
+
+    .speech-bubble-left-contents {
+        width: 42vw;
+    }
+
+    .speech-bubble-text-left {
+        padding-left: 4vw;
+    }
+
+    #talking-to-others-content h2 {
+        font-size: 1.9vw;
+        padding-bottom: 1.5vh;
+    }
+
+    .speech-bubble-right-container {
+        position: relative;
+        width: 50%;
+        right: -43vw;
+        padding-bottom: 8vh;
+    }
+
+    .speech-bubble-text-right {
+        padding-left: 4vw;
+    }
+
+    .speech-bubble-text-left p, .speech-bubble-text-right p {
+        font-size: 1.2vw;
+    }
+
+    /* ==================== donate ==================== */
+
+    #donate-content {
+        height: 160vh;
+        scroll-margin-top: 20vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    .lung-foundation-and-text {
+        margin: 0%;
+        position: relative;
+        height: 121vh;
+    }
+
+    .lung-foundation-container, .lung-foundation-and-text p {
+        display: block;
+        position: absolute;
+        left: 20vw;
+    }
+
+    .lung-foundation-and-text p {
+        z-index: -8;
+        top: 2vh;
+        width: 61vw;
+        padding-left: 0%;
+    }
+
+    .break1 {
+        display: none;
+    }
+
+    .lung-foundation-container {
+        z-index: -9;
+        bottom: 14vh;
+        width: 50vw;
+        margin-left: 4vw;
+    }
+
+    #donate-button {
+        border-radius: 3vw;
+        padding: 1.5vh 6vw;
+        font-size: 2vw;
+        width: 30%;
+    }
+
+    /* ==================== footer ==================== */
+
+    .footer-contact-us {
+        width: 30%;
+        padding-left: 2vw;
+    }
+
+    .social-media-icons sl-icon {
+        font-size: 3vw;
+        padding-left: 1.5vw;
+    }
+
+    #footer p {
+        width: 69%;
+        font-size: 1vw;
+        padding-left: 6vw;
+    }
+}
+
+@media screen and (max-width: 640px) /* height= 360*/
+{
+    
+    /* ==================== navigation ==================== */
+
+    #hamburger-btn sl-icon-button, #hamburger-btn {
+        display: block
+    }
+
+
+    /* ==================== smoking vs vaping content ==================== */
+
+    #smoking-vaping-vid-container {
+        width: 55%;
+        margin-left: 23.5vw;
+    }
+
+
+    /* ==================== talking to others ==================== */
+
+    #talking-to-others-content {
+        height: 245vh;
+        scroll-margin-top: 17vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+
+    /* ==================== donate ==================== */
+
+    #donate-content {
+        height: 136vh;
+        scroll-margin-top: 20vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    .lung-foundation-and-text {
+        height: 100vh;
+    }
+
+
+    /* ==================== footer ==================== */
+
+    #footer p {
+        width: 68%;
+        font-size: 1.3vw;
+    }
+}
+
+@media screen and (max-width: 414px) /* height= 896*/
+{
+
+    /* ==================== General styling ==================== */
+
+    h1 {
+        font-size: 5vw;
+        padding-bottom: 1.5vh;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    sl-tooltip::part(body) {
+        font-size: 2.2vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+
+    /* ==================== navigation ==================== */
+
+    ul li {
+        font-size: 3vw;
+        margin-bottom: 2vh;
+        padding-left: 0vw;
+    }
+
+    #get-started-btn {
+        border-radius: 5vw;
+        padding: 1.5vh 3.5vw;
+        font-size: 2.5vw;
+        width: 43%;
+    }
+
+
+    #logo-container {
+        width: 35%;
+        padding-bottom: 2vh;
+        padding-top: 3vh;
+    }
+
+
+    #music-btn {
+        position: absolute;
+        z-index: 100;
+        top: -1vh;
+        right: 9vw;
+    }
+
+    #music-btn sl-icon-button::part(base) {
+        font-size: 6vw;
+    }
+
+    #hamburger-btn sl-icon-button::part(base) {
+        font-size: 7vw;
+    }
+
+    /* ==================== home content ==================== */
+    
+    #home-content {
+        height: 45vh;
+    }
+
+    #home-headings-arrow {
+        top: 0%;
+        left: 8.5%;
+    }
+
+    #down-arrow {
+        margin-top: 7vh;
+    }
+
+    #main-headings {
+        padding-bottom: 7vh;
+    }
+
+    #down-arrow sl-icon-button::part(base) {
+        font-size: 6vw;
+    }
+
+
+    /* ==================== statistics ==================== */
+
+    #statistics-content {
+        height: 85vh;
+        padding-top: 5vh;
+    }
+
+    #stats-imgs {
+        padding-top: 1vh;
+    }
+
+    #flip-card1, #flip-card2, #flip-card3, #flip-card4 {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        width: 41%;
+        /* this causes the flipcards 3 and 4 to not align with flipcards 1 and 2. */
+
+    }
+
+    #flip-card3, #flip-card4 {
+        margin-top: 48vh;
+    }
+
+
+    /* ==================== smoking vs vaping content ==================== */
+
+    #smoking-vaping-content {
+        height: 70vh;
+        scroll-margin-top: 27vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    #smoking-vaping-text {
+        top: 26vh;
+        padding-left: 15%;
+    }
+
+    #smoking-vaping-vid-container {
+        width: 82%;
+        height: auto;
+        bottom: 5vh;
+        margin-left: 9vw;
+    }
+
+
+    /* ==================== how to quit ==================== */
+
+
+    #quiting-content {
+        padding-top: 10vh;
+        margin-top: 0vh;
+        height: 78vh;
+        scroll-margin-top: 10vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    #quiting-text {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 7vh;
+    }
+
+    .glider-contain-multiple {
+        left: 20vw;
+        width: 60%;
+    }
+
+    #cloud {
+        bottom: -14vh;
+        left: -28%;
+        width: 155%;
+    }
+
+
+    .glider-next sl-icon, .glider-prev sl-icon {
+        font-size: 5.5vw;
+    }
+
+    /* ==================== talking to others ==================== */
+
+    #talking-to-others-content {
+        padding-top: 5vh;
+        height: 100vh;
+        scroll-margin-top: 17vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+
+    }
+
+    .svg-image {
+        width: 22vw;
+    }
+
+    svg {
+        width: 22vw;
+    }
+
+    .speech-bubble-left-container {
+        width: 69%;
+        padding-bottom: 4vh;
+    }
+
+    .speech-bubble-left-contents {
+        width: 57vw;
+    }
+
+    #talking-to-others-content h2 {
+        font-size: 2.7vw;
+    }
+
+    .speech-bubble-right-container {
+        width: 69%;
+        right: -24vw;
+        padding-bottom: 4vh;
+    }
+
+    .speech-bubble-text-left p, .speech-bubble-text-right p {
+        font-size: 1.5vw;
+    }
+
+    /* ==================== donate ==================== */
+
+    #donate-content {
+        height: 54vh;
+    }
+
+    .lung-foundation-and-text {
+        height: 36vh;
+    }
+
+    .lung-foundation-and-text p {
+        width: 77vw;
+        left: 13vw;
+    }
+
+    .lung-foundation-container {
+        z-index: -9;
+        bottom: 3vh;
+        width: 58vw;
+        margin-left: 0vw;
+    }
+
+    #donate-button {
+        border-radius: 5vw;
+        padding: 1.5vh 3.5vw;
+        font-size: 2.5vw;
+        width: 43%;
+    }
+
+    /* ==================== footer ==================== */
+
+    .footer-contact-us {
+        width: 100%;
+        /* this stops the paragraph aligning with the icons and h3 */
+        padding-left: 0vw;
+        padding-bottom: 0vh;
+    }
+
+    h3 {
+        font-size: 3vw;
+        padding-left: 27vw;
+    }
+
+    .social-media-icons sl-icon {
+        font-size: 5.5vw;
+        padding-left: 4.5vw;
+    }
+
+    .social-media-icons {
+        padding-left: 24%;
+    }
+
+    #footer p {
+        width: 95%;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 375px) /* height= 667*/
+{
+    /* ==================== navigation ==================== */
+
+    #music-btn {
+        right: 11vw;
+    }
+
+    /* ==================== home content ==================== */
+
+    #main-headings {
+        padding-top: 23vh;
+    }
+
+    /* ==================== statistics ==================== */
+
+    #statistics-content {
+        height: 95vh;
+        padding-top: 5vh;
+    }
+
+    #stats-imgs {
+        padding-top: 1vh;
+    }
+
+    #flip-card3, #flip-card4 {
+        margin-top: 50vh;
+    }
+
+
+    /* ==================== smoking vs vaping content ==================== */
+
+    #smoking-vaping-content {
+        height: 75vh;
+        scroll-margin-top: 27vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+
+    /* ==================== how to quit ==================== */
+
+    #quiting-content {
+        padding-top: 14vh;
+        height: 92vh;
+        scroll-margin-top: 10vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+
+    /* ==================== talking to others ==================== */
+
+    #talking-to-others-content {
+        padding-top: 5vh;
+        height: 118vh;
+        scroll-margin-top: 17vh;
+        /* this ensures that when it scrolls to this section, it lands higher up(meaning the navigation bar does not hide the h1). It does not affect the amount of spacing visually like padding-top or margin-top does. ==================== */
+    }
+
+    #talking-intro-text p {
+        width: 90%;
+        padding-left: 11%;
+    }
+
+    #talking-to-others-content p br {
+        display: none;
+    }
+
+    .speech-bubble-right-contents {
+        width: 57vw;
+    }
+
+    .speech-bubble-text-left p, .speech-bubble-text-right p {
+        font-size: 1.8vw;
+    }
+
+    /* ==================== donate ==================== */
+
+    #donate-content {
+        height: 60vh;
+    }
+
+    .lung-foundation-and-text {
+        height: 42vh;
+    }
+
+}

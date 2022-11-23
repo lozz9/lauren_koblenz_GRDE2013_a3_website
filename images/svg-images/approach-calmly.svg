@@ -1,0 +1,21 @@
+<svg width="723" height="738" viewBox="0 0 723 738" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="approach-calmly">
+<g id="sun">
+<circle id="Ellipse 1" cx="571.5" cy="127.5" r="35.5" fill="#E37826"/>
+<line id="Line 1" x1="503.121" y1="52" x2="539" y2="87.8787" stroke="#E37826" stroke-width="3" stroke-linecap="round"/>
+<line id="Line 2" x1="615.121" y1="163" x2="651" y2="198.879" stroke="#E37826" stroke-width="3" stroke-linecap="round"/>
+<line id="Line 5" x1="1.5" y1="-1.5" x2="53.1431" y2="-1.5" transform="matrix(-0.718602 0.695421 0.718602 0.695421 648.267 54)" stroke="#E37826" stroke-width="3" stroke-linecap="round"/>
+<line id="Line 6" x1="1.5" y1="-1.5" x2="53.1431" y2="-1.5" transform="matrix(-0.718602 0.695421 0.718602 0.695421 532.267 164)" stroke="#E37826" stroke-width="3" stroke-linecap="round"/>
+<line id="Line 3" x1="572.5" y1="32.4997" x2="572.51" y2="83.2398" stroke="#E37826" stroke-width="3" stroke-linecap="round"/>
+<line id="Line 4" x1="572.5" y1="171.5" x2="572.5" y2="222.24" stroke="#E37826" stroke-width="3" stroke-linecap="round"/>
+<line id="Line 7" x1="470.5" y1="125.5" x2="518.5" y2="125.5" stroke="#E37826" stroke-width="3" stroke-linecap="round"/>
+<line id="Line 8" x1="623.5" y1="125.5" x2="671.5" y2="125.5" stroke="#E37826" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="smiley-face">
+<circle id="Ellipse 2" cx="304.5" cy="454.5" r="243.5" fill="white" stroke="#73A684" stroke-width="20"/>
+<path id="Ellipse 3" d="M246 406C246 428.091 229.093 446 208.237 446C187.381 446 172 428.091 172 406" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<path id="Ellipse 4" d="M438 406C438 428.091 421.093 446 400.237 446C379.381 446 364 428.091 364 406" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<path id="Ellipse 5" d="M436 526C413.5 568.5 365.05 604 302.201 604C239.352 604 192.5 571.5 173 526" stroke="black" stroke-width="20" stroke-linecap="round"/>
+</g>
+</g>
+</svg>

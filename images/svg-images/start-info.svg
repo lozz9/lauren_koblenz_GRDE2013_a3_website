@@ -1,0 +1,39 @@
+<svg width="950" height="738" viewBox="0 0 950 738" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="start-info">
+<g id="notes">
+<path id="Rectangle 2" d="M68 161C68 140.013 85.0132 123 106 123H193H240.471C251.251 123 261.525 127.579 268.731 135.597L288.42 157.5L310.553 187.43C315.39 193.97 318 201.89 318 210.024V295.5V430C318 450.987 300.987 468 280 468H106C85.0132 468 68 450.987 68 430V161Z" fill="white"/>
+<path id="Rectangle 3" d="M347 161C347 140.013 364.013 123 385 123H472H519.471C530.251 123 540.525 127.579 547.731 135.597L567.42 157.5L589.553 187.43C594.39 193.97 597 201.89 597 210.024V295.5V430C597 450.987 579.987 468 559 468H385C364.013 468 347 450.987 347 430V161Z" fill="white"/>
+<path id="Rectangle 4" d="M633 161C633 140.013 650.013 123 671 123H758H805.471C816.251 123 826.525 127.579 833.731 135.597L853.42 157.5L875.553 187.43C880.39 193.97 883 201.89 883 210.024V295.5V430C883 450.987 865.987 468 845 468H671C650.013 468 633 450.987 633 430V161Z" fill="white"/>
+<path id="Rectangle 1" d="M595 246.5V210.024C595 201.89 592.39 193.97 587.553 187.43L565.42 157.5L545.731 135.597C538.525 127.579 528.251 123 517.471 123H470H383C362.013 123 345 140.013 345 161V430C345 450.987 362.013 468 383 468H439" stroke="black" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector 1" d="M518.664 187V129.5L566 152.5L590.229 206H537.664C527.171 206 518.664 197.493 518.664 187Z" fill="black"/>
+<path id="Rectangle 1_2" d="M806.5 468H845C865.987 468 883 450.987 883 430V295.5V210.024C883 201.89 880.39 193.97 875.553 187.43L853.42 157.5L833.731 135.597C826.525 127.579 816.251 123 805.471 123H758H671C650.013 123 633 140.013 633 161V246.5" stroke="#73A684" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector 1_2" d="M806.664 187V129.5L853.5 155.5L878.229 206H825.664C815.171 206 806.664 197.493 806.664 187Z" fill="#73A684"/>
+<path id="Rectangle 1_3" d="M279 458H105C89.536 458 77 445.464 77 430V161C77 145.536 89.536 133 105 133H192H239.471C247.414 133 254.984 136.374 260.294 142.282L279.663 163.83L301.513 193.376C305.077 198.195 307 204.031 307 210.024V295.5V430C307 445.464 294.464 458 279 458Z" stroke="#73A684" stroke-width="20" stroke-linejoin="round"/>
+<path id="Vector 1_3" d="M240.664 187V129.5L312.229 206H259.664C249.171 206 240.664 197.493 240.664 187Z" fill="#73A684"/>
+<line id="Line 10" x1="119" y1="207" x2="189" y2="207" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 11" x1="119" y1="251" x2="264" y2="251" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 12" x1="119" y1="291" x2="264" y2="291" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 13" x1="119" y1="336" x2="264" y2="336" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 14" x1="119" y1="375" x2="264" y2="375" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 15" x1="119" y1="419" x2="264" y2="419" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 10_2" x1="687" y1="207" x2="757" y2="207" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 11_2" x1="687" y1="251" x2="839" y2="251" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 12_2" x1="742" y1="291" x2="839" y2="291" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<path id="Line 13_2" d="M770 336H842" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 14_2" x1="797" y1="375" x2="839" y2="375" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 15_2" x1="804" y1="419" x2="839" y2="419" stroke="black" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 10_3" x1="390" y1="207" x2="460" y2="207" stroke="#73A684" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 11_3" x1="390" y1="251" x2="535" y2="251" stroke="#73A684" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 12_3" x1="390" y1="291" x2="491" y2="291" stroke="#73A684" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 13_3" x1="390" y1="336" x2="469" y2="336" stroke="#73A684" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 14_3" x1="390" y1="375" x2="453" y2="375" stroke="#73A684" stroke-width="20" stroke-linecap="round"/>
+<line id="Line 15_3" x1="390" y1="419" x2="436" y2="419" stroke="#73A684" stroke-width="20" stroke-linecap="round"/>
+</g>
+<g id="info-glass">
+<circle id="Ellipse 6" cx="625.5" cy="448.5" r="126.5" fill="white" stroke="#E37826" stroke-width="54"/>
+<path id="Rectangle 2_2" d="M694.187 560.921L738.927 515.473L884.575 658.853C892.053 666.215 892.147 678.244 884.786 685.722L866.704 704.09C859.343 711.568 847.313 711.662 839.835 704.301L694.187 560.921Z" fill="#E37826"/>
+<line id="Line 9" x1="628" y1="423" x2="628" y2="510" stroke="#E37826" stroke-width="26" stroke-linecap="round"/>
+<circle id="Ellipse 7" cx="628.5" cy="379.5" r="13.5" fill="#E37826"/>
+</g>
+</g>
+</svg>
